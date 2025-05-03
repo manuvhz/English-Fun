@@ -13,30 +13,30 @@ document.addEventListener('DOMContentLoaded', function() {
     // Canciones disponibles
     const songs = [
         {
-            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/ride.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Mediaride.mp3/',
             title: 'Ride',
             duration: '3:34'
         },
         {
-            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/counting.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/counting.mp3/',
             title: 'Counting Stars',
             duration: '4:17' 
         },
         {
-            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/adventure.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/adventure.mp3/',
             title: 'Adventure of A Life Time',
             duration: '4:23'
         },
         {
-            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/demons.mp3',
-            title: 'Demons',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/demons.mp3/',
+            title: 'Adventure of A Life Time',
             duration: '2:54'
         },
         {
-            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/sugar.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/sugar.mp3/',
             title: 'Sugar',
-            duration: '4:244'
-        }
+            duration: '4:24'
+        },
         
     ];
     
