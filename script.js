@@ -13,27 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Canciones disponibles
     const songs = [
         {
-            path: 'media/ride.mp3/',
+            path: 'Media/ride.mp3/',
             title: 'Ride',
             duration: '3:34'
         },
         {
-            path: 'media/counting.mp3/',
+            path: 'Media/counting.mp3/',
             title: 'Counting Stars',
             duration: '4:17'
         },
         {
-            path: 'media/adventure.mp3/',
+            path: 'Media/adventure.mp3/',
             title: 'Adventure of A Life Time',
             duration: '4:23'
         },
         {
-            path: 'media/demons.mp3/',
+            path: 'Media/demons.mp3/',
             title: 'Adventure of A Life Time',
             duration: '2:54'
         },
         {
-            path: 'media/demons.mp3/',
+            path: 'Media/demons.mp3/',
             title: 'Adventure of A Life Time',
             duration: '2:54'
         },
