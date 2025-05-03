@@ -13,27 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Canciones disponibles
     const songs = [
         {
-            path: 'https://manuvhz.github.io/English-Fun/Media/ride.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/ride.mp3',
             title: 'Ride',
             duration: '3:34'
         },
         {
-            path: 'https://manuvhz.github.io/English-Fun/Media/counting.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/counting.mp3',
             title: 'Counting Stars',
             duration: '4:17' 
         },
         {
-            path: 'https://manuvhz.github.io/English-Fun/Media/adventure.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/adventure.mp3',
             title: 'Adventure of A Life Time',
             duration: '4:23'
         },
         {
-            path: 'https://manuvhz.github.io/English-Fun/Media/demons.mp3',
-            title: 'Adventure of A Life Time',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/demons.mp3',
+            title: 'Demons',
             duration: '2:54'
         },
         {
-            path: 'https://manuvhz.github.io/English-Fun/Media/sugar.mp3',
+            path: 'https://raw.githubusercontent.com/manuvhz/English-Fun/main/Media/sugar.mp3',
             title: 'Sugar',
             duration: '4:24'
         },
@@ -343,4 +343,28 @@ document.getElementById('youtube-modal').addEventListener('click', function(e) {
         // Aquí se abriría la URL en una nueva pestaña
         window.open(url, '_blank');
     }
+});
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+    
+    // Opcional: Cambiar el icono ☰ a ✕ cuando está abierto
+    const toggleBtn = document.querySelector('.menu-toggle');
+    if (navbar.classList.contains('active')) {
+        toggleBtn.innerHTML = '✕';
+    } else {
+        toggleBtn.innerHTML = '☰';
+    }
+}
+
+// Cerrar el menú al hacer clic en un enlace (opcional)
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navbar').classList.remove('active');
+        document.querySelector('.menu-toggle').innerHTML = '☰';
+    });
+
+    const audio = new Audio();
+audio.crossOrigin = "anonymous"; // ¡Esto es crucial!
 });

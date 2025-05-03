@@ -868,3 +868,71 @@ h1 {
     display: block; /* Hace que el enlace ocupe todo el área del div */
 }
 
+@media (max-width: 768px) {
+    .full-width-header {
+        padding: 10px 5%; /* Reducir padding vertical */
+    }
+    
+    .full-width-header .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+    }
+    
+    .logo-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .logo {
+        height: 40px; /* Reducir tamaño del logo */
+    }
+    
+    h1 {
+        font-size: 1.3rem; /* Reducir tamaño del título */
+        white-space: nowrap; /* Evitar saltos de línea */
+        margin-right: auto; /* Empujar el menú hamburguesa a la derecha */
+        padding-left: 10px;
+    }
+    
+    /* Menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        order: 2; /* Posicionar a la derecha */
+    }
+    
+    .navbar {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .navbar.active {
+        display: block;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .navbar li {
+        margin: 0;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .navbar a:hover {
+        background-color: rgba(255, 107, 107, 0.1);
+    }
+}

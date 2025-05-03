@@ -12,22 +12,24 @@
 <body>
     <div class="container">
         <!-- Header con logo y navegación -->
-        <header class="header">
-            <div class="logo-container">
-                <img src="Media/logo.png" alt="MegaColegio Los Colores" class="logo">
-                <h1>English Fun with Teacher Andrea</h1>
+        <header class="full-width-header">
+            <div class="container">
+                <div class="logo-container">
+                    <img src="/Media/logo.png" alt="MegaColegio Los Colores" class="logo">
+                    <h1>English Fun with Teacher Andrea</h1>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <ul>
+                        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#videos"><i class="fas fa-video"></i> Videos</a></li>
+                        <li><a href="#stories"><i class="fas fa-book-open"></i> Stories</a></li>
+                        <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="#songs"><i class="fas fa-music"></i> Songs</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#videos"><i class="fas fa-video"></i> Videos</a></li>
-                    <li><a href="#stories"><i class="fas fa-book-open"></i> Reading</a></li>
-                     <li><a href="#songs"><i class="fas fa-music"></i> Songs</a></li>
-                    <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
-                </ul>
-            </nav>
         </header>
-
         <!-- Sección principal -->
         <main class="main-content">
             <!-- Banner principal -->
