@@ -1,4 +1,3 @@
-/* Estilos generales */
 :root {
     --primary-color: #FF6B6B;
     --secondary-color: #4ECDC4;
@@ -28,7 +27,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -84,7 +83,6 @@ h1 {
     color: var(--primary-color);
 }
 
-/* Banner */
 .banner {
     display: flex;
     align-items: center;
@@ -149,7 +147,6 @@ h1 {
     100% { transform: translateY(0px); }
 }
 
-/* Secciones */
 .section {
     margin: 50px 0;
 }
@@ -167,7 +164,6 @@ h1 {
     margin-right: 10px;
 }
 
-/* Videos */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -227,7 +223,6 @@ h1 {
     color: #666;
 }
 
-/* Historias */
 .story-carousel {
     display: flex;
     overflow-x: auto;
@@ -271,7 +266,6 @@ h1 {
     background-color: #3abab3;
 }
 
-/* Reproductor de audio */
 .audio-player {
     background-color: white;
     border-radius: 15px;
@@ -368,7 +362,6 @@ h1 {
     color: #666;
 }
 
-/* Juegos */
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -407,7 +400,6 @@ h1 {
     padding: 0 15px;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -453,7 +445,6 @@ h1 {
     border-radius: 5px;
 }
 
-/* Footer */
 .footer {
     background-color: var(--dark-color);
     color: rgb(255, 255, 255);
@@ -480,7 +471,6 @@ h1 {
     color: var(--accent-color);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -511,7 +501,6 @@ h1 {
     }
 }
 
-/* Tablet: 768px - 1024px */
 @media (max-width: 1024px) {
     .banner h2 {
         font-size: 2rem;
@@ -526,7 +515,6 @@ h1 {
     }
 }
 
-/* Tablet Pequeña: 600px - 768px */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -583,7 +571,6 @@ h1 {
     }
 }
 
-/* Móvil Grande: 480px - 600px */
 @media (max-width: 600px) {
     .container {
         padding: 0 15px;
@@ -624,7 +611,6 @@ h1 {
     }
 }
 
-/* Móvil Pequeño: hasta 480px */
 @media (max-width: 480px) {
     .navbar a span {
         display: none;
@@ -667,7 +653,6 @@ h1 {
     }
 }
 
-/* Orientación Landscape */
 @media (max-height: 500px) and (orientation: landscape) {
     .header {
         position: static;
@@ -750,7 +735,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Responsive para móviles */
 @media (max-width: 480px) {
     .main-controls {
         gap: 15px;
@@ -771,7 +755,6 @@ h1 {
     }
 }
 
-/* Ajustes para mantener el centrado */
 .player-controls {
     display: flex;
     justify-content: center;
@@ -781,7 +764,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-/* Responsive para el control de volumen */
 @media (max-width: 600px) {
     .volume-control {
         display: flex;
@@ -854,29 +836,29 @@ h1 {
 }
 
 .no-link-styles {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Mantiene el color del texto original */
+    text-decoration: none;
+    color: inherit; 
 }
 
-/* Si quieres asegurarte de que el color del texto no cambie al hacer hover */
+
 .no-link-styles:hover {
-    color: inherit; /* Mantiene el color original al pasar el ratón */
+    color: inherit; 
 }
 
-/* Puedes agregar estilos adicionales, si lo deseas */
+
 .game-card a {
-    display: block; /* Hace que el enlace ocupe todo el área del div */
+    display: block; 
 }
 
-/* Ajustes para pantallas muy pequeñas */
+
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.1rem; /* Título aún más pequeño */
+        font-size: 1.1rem;
         padding-left: 5px;
     }
     
     .logo {
-        height: 35px; /* Logo más pequeño */
+        height: 35px; 
     }
     
     .menu-toggle {
@@ -894,7 +876,7 @@ h1 {
     }
 }
 
-/* Ocultar texto en enlaces y solo mostrar iconos si es necesario */
+
 @media (max-width: 360px) {
     .navbar a span {
         display: none;
@@ -906,7 +888,7 @@ h1 {
     }
 }
 
-/* Estilos generales del header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -916,14 +898,13 @@ h1 {
     position: relative;
 }
 
-/* Logo y título */
+
 .logo-container {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-/* Botón Hamburguesa (oculto por defecto en desktop) */
 .hamburger {
     display: none;
     background: none;
@@ -942,7 +923,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
-/* Menú de navegación */
+
 .navbar {
     display: flex;
 }
@@ -961,7 +942,7 @@ h1 {
     gap: 0.5rem;
 }
 
-/* Versión móvil */
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -987,12 +968,12 @@ h1 {
         align-items: center;
     }
     
-    /* Estado activo (menú abierto) */
+    
     .navbar.active {
         transform: translateX(0);
     }
     
-    /* Animación del botón hamburguesa a X */
+    
     .hamburger.active .hamburger-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
