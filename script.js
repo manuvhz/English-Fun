@@ -367,4 +367,83 @@ document.querySelectorAll('.navbar a').forEach(link => {
 
     const audio = new Audio();
 audio.crossOrigin = "anonymous"; // ¡Esto es crucial!
+
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    const body = document.body;
+    
+    navbar.classList.toggle('active');
+    
+    // Bloquear scroll del body cuando el menú está abierto
+    if (navbar.classList.contains('active')) {
+        body.style.overflow = 'hidden';
+        document.querySelector('.menu-toggle').innerHTML = '✕';
+    } else {
+        body.style.overflow = 'auto';
+        document.querySelector('.menu-toggle').innerHTML = '☰';
+    }
+}
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    const body = document.body;
+    const toggleBtn = document.querySelector('.menu-toggle');
+    
+    navbar.classList.toggle('active');
+    
+    if (navbar.classList.contains('active')) {
+        body.style.overflow = 'hidden';
+        toggleBtn.innerHTML = '✕';
+        toggleBtn.style.position = 'fixed';
+        toggleBtn.style.right = '20px';
+        toggleBtn.style.top = '20px';
+    } else {
+        body.style.overflow = 'auto';
+        toggleBtn.innerHTML = '☰';
+        toggleBtn.style.position = 'static';
+    }
+}
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navbar').classList.remove('active');
+        document.body.style.overflow = 'auto';
+        document.querySelector('.menu-toggle').innerHTML = '☰';
+        document.querySelector('.menu-toggle').style.position = 'static';
+    });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
+    const body = document.body;
+    
+    hamburger.addEventListener('click', function() {
+        // Alternar clases activas
+        this.classList.toggle('active');
+        navbar.classList.toggle('active');
+        
+        // Bloquear scroll cuando el menú está abierto
+        if (navbar.classList.contains('active')) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = 'auto';
+        }
+    });
+    
+    // Cerrar menú al hacer clic en un enlace (solo para móviles)
+    if (window.innerWidth <= 768) {
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navbar.classList.remove('active');
+                body.style.overflow = 'auto';
+            });
+        });
+    }
+});
+
+});
+

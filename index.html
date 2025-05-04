@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>English Fun - MegaColegio Los Colores</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Comic+Neue&display=swap" rel="stylesheet">
@@ -12,23 +12,29 @@
 <body>
     <div class="container">
         <!-- Header con logo y navegación -->
-        <header class="full-width-header">
-            <div class="container">
-                <div class="logo-container">
-                    <img src="/Media/logo.png" alt="MegaColegio Los Colores" class="logo">
-                    <h1>English Fun with Teacher Andrea</h1>
-                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-                </div>
-                <nav class="navbar" id="navbar">
-                    <ul>
-                        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#videos"><i class="fas fa-video"></i> Videos</a></li>
-                        <li><a href="#stories"><i class="fas fa-book-open"></i> Stories</a></li>
-                        <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
-                        <li><a href="#songs"><i class="fas fa-music"></i> Songs</a></li>
-                    </ul>
-                </nav>
+        <header class="header">
+            <div class="logo-container">
+                <img src="Media/logo.png" alt="Logo" class="logo">
+                <h1 class="title">English Fun with Teacher Andrea</h1>
             </div>
+            
+            <!-- Botón Hamburguesa -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Menú de Navegación -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#videos"><i class="fas fa-video"></i> Videos</a></li>
+                    <li><a href="#stories"><i class="fas fa-book-open"></i> Stories</a></li>
+                    <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+                    <li><a href="#songs"><i class="fas fa-music"></i> Songs</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- Sección principal -->
         <main class="main-content">
